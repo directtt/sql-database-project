@@ -1,0 +1,14 @@
+Marki                  ( [PK nazwa], rok_założenia ) 
+Modele                 ( [PK identyfikator], nazwa, rok_wprowadzenia, [NOT NULL [FK nazwa_marki]], [FK id_poprzednik], [UNIQUE (id_poprzednik, nazwa_marki)], [NOT NULL typ], 
+						  liczba_pasazerow, poj_bagaznika, ladownosc )
+Typy_Silnika           ( [PK identyfikator], opis_parametrów, rodzaj_paliwa )
+Silniki_Modeli         ( [PK [FK id_modelu], [NOT NULL [FK id_silnika]] ] )
+Samochody              ( [PK VIN], przebieg, skrzynia_biegów, kraj_pochodzenia, rok_produkcji, [NOT NULL [FK id_modelu]], [NOT NULL [FK id_silnika]], [FK nazwa_dealera] )
+Dodatkowe_wyposazenia  ( [PK nazwa] )
+Wyposazenia_Samochodow ( [PK [FK nazwa_wyposazenia], [FK VIN_samochodu]] )
+Dealerzy               ( [PK nazwa], adres )
+Modele_Dealerow        ( [PK [FK id_modelu], [FK nazwa_dealera]] )
+Klienci                ( [PK id], imię, nazwisko, nr_telefonu )
+Sprzedaze              ( [PK data, [FK nazwa_dealera], [FK id_klienta], [FK VIN_samochodu]] , cena ) -- nie ma potrzeby dodawania NOT NULL na FK, 
+																								     -- bo i tak PK zalozony na FK nie przyjmuje NULL
+
