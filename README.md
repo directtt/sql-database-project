@@ -22,7 +22,7 @@ W ramach projektu należy stworzyć zestaw skryptów SQL:
   * realizacja związku z obustronnym udziałem całkowitym ("musi"),
   * generowanie raportów.
  * **skrypt nr. 2** `pokaz.sql`:
-  * skrypt zawierający polecenia testujące zaimplementowane funkcjonalności, pokazujące przypadki szczególne oraz sposób reakcji na błędy - a zatem przykładowe wywołania procedur, funkcji, wyzwalaczy i widoków.
+   * skrypt zawierający polecenia testujące zaimplementowane funkcjonalności, pokazujące przypadki szczególne oraz sposób reakcji na błędy - a zatem przykładowe wywołania procedur, funkcji, wyzwalaczy i widoków.
 
 ## Opis tematu
 ### Autokomis
