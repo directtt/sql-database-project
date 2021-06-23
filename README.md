@@ -1,5 +1,5 @@
 # sql-database-project
-SQL Database modeling and programing project for my Computer Science Database classes. [specific requirements in Polish]
+SQL Database modeling and programming project for my Computer Science Database classes. [specific requirements in Polish]
 
 ## Opis zadania
 W ramach projektu należy:
